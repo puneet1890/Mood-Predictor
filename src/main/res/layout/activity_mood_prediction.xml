@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MoodPrediction">
+
+    <TextView
+        android:id="@+id/tvHeart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/tvHeart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMobile" />
+
+    <TextView
+        android:id="@+id/tvSetHeart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:hint="@string/tvsetHeart"
+        app:layout_constraintEnd_toEndOf="@+id/tvSetMood"
+        app:layout_constraintStart_toStartOf="@+id/tvSetTemp"
+        app:layout_constraintTop_toBottomOf="@+id/tvSetMobile" />
+
+    <TextView
+        android:id="@+id/tvSkin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:text="@string/tvSkin"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvSetSkin"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSetSkin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginBottom="44dp"
+        android:hint="@string/tvsetSkin"
+        app:layout_constraintBottom_toTopOf="@+id/tvSetTemp"
+        app:layout_constraintStart_toEndOf="@+id/tvSkin" />
+
+    <TextView
+        android:id="@+id/tvTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/tvTemp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSkin" />
+
+    <TextView
+        android:id="@+id/tvSetTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="261dp"
+        android:layout_marginEnd="49dp"
+        android:hint="@string/tvsetTemp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvMood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:text="@string/tvStatus"
+        app:layout_constraintStart_toStartOf="@+id/tvTemp"
+        app:layout_constraintTop_toBottomOf="@+id/tvTemp" />
+
+    <TextView
+        android:id="@+id/tvSetMood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:hint="@string/tvsetStatus"
+        app:layout_constraintStart_toStartOf="@+id/tvSetTemp"
+        app:layout_constraintTop_toBottomOf="@+id/tvSetTemp" />
+
+    <TextView
+        android:id="@+id/tvConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/tvConfirm"
+        app:layout_constraintBottom_toTopOf="@+id/btnYes"
+        app:layout_constraintStart_toEndOf="@+id/btnYes" />
+
+    <Button
+        android:id="@+id/btnYes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="62dp"
+        android:layout_marginBottom="59dp"
+        android:hint="@string/btnYes"
+        android:onClick="yes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="59dp"
+        android:hint="@string/btnNo"
+        android:onClick="no"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tvMobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="61dp"
+        android:text="@string/tvMobile"
+        app:layout_constraintEnd_toEndOf="@+id/btnYes"
+        app:layout_constraintStart_toStartOf="@+id/tvHeart"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSetMobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="31dp"
+        android:hint="@string/tvsetMobile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

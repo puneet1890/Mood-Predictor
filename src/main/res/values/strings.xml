@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Mood Predictor</string>
+    <string name="etMobile">Enter your mobile number</string>
+    <string name="btnSubmit">Submit</string>
+    <string name="tvHeart">Heartbeats[bpm]</string>
+    <string name="tvsetHeart">Heartbeats</string>
+    <string name="tvSkin">Skin Electroconductance[mS]</string>
+    <string name="tvsetSkin">Skin</string>
+    <string name="tvTemp">Temperature[C]</string>
+    <string name="tvsetTemp">Temperature</string>
+    <string name="tvStatus">Your detected mood is</string>
+    <string name="tvsetStatus">Your Mood</string>
+    <string name="tvConfirm">Is that right?</string>
+    <string name="tvMobile"> Mobile number</string>
+    <string name="tvsetMobile">Your Mobile No</string>
+    <string name="btnYes">Yes</string>
+    <string name="btnNo">No</string>
+</resources>
